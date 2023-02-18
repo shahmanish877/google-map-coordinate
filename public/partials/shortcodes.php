@@ -7,8 +7,8 @@ function shortcode_custom_map_lat_lon($atts)
 {
     ob_start();
 
-    $default_lat = get_option('custom-map-lat-lon-latitude');
-    $default_lon = get_option('custom-map-lat-lon-longitude');
+    $default_lat = get_option('custom-map-latitude');
+    $default_lon = get_option('custom-map-longitude');
 
     if ( $default_lat == '' && $default_lon == '') {
         $default_lat = '27.67';
@@ -36,7 +36,7 @@ function shortcode_custom_map_lat_lon($atts)
     <div class="custom-map-container">
         <div class="row">
             <div class="custom-map-iframe">
-                <iframe src="https://maps.google.com/maps?q=<?php echo $lat; ?>,<?php echo $lon; ?>&hl=es;z=14&amp;output=embed&z=15" frameborder=0  width="100%" height="400px"></iframe>
+                <iframe src="https://maps.google.com/maps?q=<?php echo esc_html($lat); ?>,<?php echo esc_html($lon); ?>&hl=es;z=14&amp;output=embed&z=15" frameborder=0  width="100%" height="400px"></iframe>
             </div>
         </div>
     </div>
@@ -45,4 +45,4 @@ function shortcode_custom_map_lat_lon($atts)
     return ob_get_clean();
 }
 
-add_shortcode('gmap-coordinate', 'shortcode_custom_map_lat_lon');
+add_shortcode('map-coordinate', 'shortcode_custom_map_lat_lon');

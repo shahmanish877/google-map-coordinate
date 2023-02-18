@@ -13,8 +13,8 @@
 
 function register_custom_map_page() {
     add_menu_page(
-        __( 'G-Map Coordinates', 'custom-map-lat-lon' ),
-        'G-Map',
+        __( 'Custom Map Coordinates', 'custom-map-lat-lon' ),
+        'Custom Map',
         'manage_options',
         'custom-map-lat-lon-page',
         'custom_map_page_callback',
@@ -54,11 +54,11 @@ function custom_map_page_callback() {
     ?>
 
     <div class="wrap">
-        <h1 class="wp-heading-inline"> <?php _e('G-Map Coordinates', 'custom-map-lat-lon'); ?> </h1>
+        <h1 class="wp-heading-inline"> <?php esc_html_e('Custom Map Coordinates', 'custom-map-lat-lon'); ?> </h1>
 
         <?php if ($message): ?>
-            <div class="notice notice-<?php echo $type; ?>">
-                <p><?php echo $message; ?></p>
+            <div class="notice notice-<?php echo esc_attr($type); ?>">
+                <p><?php esc_html_e($message, 'custom-map-lat-lon'); ?></p>
             </div>
         <?php endif; ?>
 
@@ -66,21 +66,21 @@ function custom_map_page_callback() {
             <?php wp_nonce_field('save_lat_long'); ?>
             <table class="form-table">
                 <tr>
-                    <th scope="row"><label for="custom-map-latitude"> <?php _e('Latitude', 'custom-map-lat-lon'); ?> </label></th>
+                    <th scope="row"><label for="custom-map-latitude"> <?php esc_html_e('Latitude', 'custom-map-lat-lon'); ?> </label></th>
                     <td>
-                        <input type="text" name="custom-map-latitude" id="custom-map-latitude" placeholder="23.343424" value="<?php echo get_option('custom-map-lat-lon-latitude'); ?>" >
+                        <input type="text" name="custom-map-latitude" id="custom-map-latitude" placeholder="23.343424" value="<?php echo esc_html(get_option('custom-map-latitude')); ?>" >
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"><label for="custom-map-longitude"> <?php _e('Longitude', 'custom-map-lat-lon'); ?> </label></th>
+                    <th scope="row"><label for="custom-map-longitude"> <?php esc_html_e('Longitude', 'custom-map-lat-lon'); ?> </label></th>
                     <td>
-                        <input type="text" name="custom-map-longitude" id="custom-map-longitude" placeholder="54.343424" value="<?php echo get_option('custom-map-lat-lon-longitude'); ?>" >
+                        <input type="text" name="custom-map-longitude" id="custom-map-longitude" placeholder="54.343424" value="<?php echo esc_html(get_option('custom-map-longitude')); ?>" >
                     </td>
                 </tr>
             </table>
 
             <p class="submit">
-                <input type="submit" name="submit" id="submit" class="button button-primary" value=" <?php echo __('Save Changes', 'custom-map-lat-lon'); ?>">
+                <input type="submit" name="submit" id="submit" class="button button-primary" value=" <?php esc_html_e('Save Changes', 'custom-map-lat-lon'); ?>">
             </p>
         </form>
     </div>

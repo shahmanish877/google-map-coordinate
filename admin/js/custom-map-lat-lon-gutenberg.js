@@ -5,7 +5,7 @@
 	const { InspectorControls } = wp.blockEditor;
 
 	registerBlockType('custom-map/custom-map-lat-lon', {
-		title: __('Google Map (Lat, Lon)', 'custom-map-lat-lon'),
+		title: __('Custom Map Coordinates', 'custom-map-lat-lon'),
 		description: __("A custom block to display google map with latitude & longitude", "custom-map-lat-lon"),
 		icon: 'location',
 		category: 'common',
@@ -51,7 +51,7 @@
 				wp.element.createElement(
 					'h3',
 					{ className: 'custom-block-edit' },
-					'Google map with Latitude & Longitude'
+					'Custom map with Latitude & Longitude'
 				)
 			];
 		},
@@ -62,7 +62,7 @@
 			return wp.element.createElement(
 				'div',
 				{ className: 'custom-block' },
-				`[gmap-coordinate lat="${ latitude }" lon="${ longitude }"]`
+				`[map-coordinate lat="${ latitude }" lon="${ longitude }"]`
 			);
 		}
 	} );

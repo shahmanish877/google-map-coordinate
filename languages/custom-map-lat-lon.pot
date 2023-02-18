@@ -1,12 +1,12 @@
 # Copyright (C) 2019 Geolocation
-# This file is distributed under the same license as the G-Map (Lat, Lon) package.
+# This file is distributed under the same license as the Custom Map Coordinates package.
 
 #: /admin/partials/custom-map-lat-lon-admin-menu.php:16
-msgid "G-Map Coordinates"
+msgid "Custom Map Coordinates"
 msgstr ""
 
 #: /admin/partials/custom-map-lat-lon-admin-menu.php:17
-msgid "G-Map"
+msgid "Custom Map"
 msgstr ""
 
 #: /admin/partials/custom-map-lat-lon-admin-menu.php:69
@@ -22,7 +22,7 @@ msgid "Save Changes"
 msgstr ""
 
 #: /admin/js/custom-map-lat-lon-gutenberg.js:8
-msgid "Google Map (Lat, Lon)"
+msgid "Custom Map Coordinates"
 msgstr ""
 
 #: /admin/js/custom-map-lat-lon-gutenberg.js:9

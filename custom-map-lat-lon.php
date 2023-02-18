@@ -1,18 +1,13 @@
 <?php
 
 /**
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
  * @since             1.0.0
  * @package           Custom_Map_Lat_Lon
  *
  * @wordpress-plugin
- * Plugin Name:       G-Map (Lat, Lon)
+ * Plugin Name:       Custom Map Coordinates
  * Plugin URI:        https://#
- * Description:       This plugin adds the shortcode ([gmap-coordinate lat="xx" lon="xx"]) and also a Gutenberg block to display Google Maps with Latitude & Longitude. There is also an admin menu to add Latitude & Longitude globally for all Gutenberg blocks and shortcodes.
+ * Description:       This plugin adds the shortcode ([map-coordinate lat="xx" lon="xx"]) and also a Gutenberg block to display Google Maps with Latitude & Longitude. There is also an admin menu to add Latitude & Longitude globally for all Gutenberg blocks and shortcodes.
  * Version:           1.0.0
  * Author:            Manish Shah
  * Author URI:        https://www.manishshah.info.np

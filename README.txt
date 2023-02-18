@@ -1,29 +1,29 @@
-=== G-Map (Lat, Lon) ===
+=== Custom Map Coordinates ===
 Contributors: shahmanish877
 Donate link:
 Tags: google map, map, map with coordinates
-Requires at least: 4.0
-Tested up to: 4.8
+Requires at least: 5.6 or higher
+Tested up to: 6.1.1
 Stable tag: 1.0.0
-Requires PHP: 5.4
+Requires PHP: 5.3 or higher
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Use google map with coordinates (latitude & longitude) anywhere in WordPress with help of shortcodes & Gutenberg block
+Use Google Maps with coordinates (latitude & longitude) anywhere in WordPress with help of shortcodes & Gutenberg block
 
 == Description ==
 
-This plugin allows to use the shortcode (**`[gmap-coordinate]`**) or a Gutenberg block to display Google Maps with Latitude & Longitude. There is also an admin menu to add Latitude & Longitude globally for all Gutenberg blocks and shortcodes.
+This plugin allows to use the shortcode (**`[map-coordinate]`**) or a Gutenberg block to display Google Maps with Latitude & Longitude. There is also an admin menu to add Latitude & Longitude globally for all Gutenberg blocks and shortcodes.
 
-You can add the coordinates globally for the map to use from admin menu (**`G-Map`**) as shown on screenshot #1.
+You can add the coordinates globally for the map to use from admin menu (**`Custom Map`**) as shown on screenshot #1.
 
 The shortcode for the map to display is:
 
-`[gmap-coordinate]`
+`[map-coordinate]`
 
 You can also add different coordinates for each shortcode:
 
-`[gmap-coordinate lat="xx" lon="xx"]`
+`[map-coordinate lat="xx" lon="xx"]`
 
 If you are using Gutenberg editor for your posts, then you can also use the Gutenberg block - **Google Map (Lat, Lon)**
 
