@@ -8,7 +8,7 @@
  * Plugin Name:       Custom Map Coordinates
  * Plugin URI:        https://#
  * Description:       This plugin adds the shortcode ([map-coordinate lat="xx" lon="xx"]) and also a Gutenberg block, elementor widget to display Google Maps with Latitude & Longitude. There is also an admin menu to add Latitude & Longitude globally for all Gutenberg blocks, elementor widgets and shortcodes.
- * Version:           1.0.1
+ * Version:           1.1
  * Author:            Manish Shah
  * Author URI:        https://www.manishshah.info.np
  * License:           GPL-2.0+
@@ -70,7 +70,7 @@ function run_custom_map_lat_lon() {
 /**
  * Registers elementor widget
  *
- * @since    1.0.1
+ * @since    1.1
  */
 function register_list_widget( $widgets_manager ) {
 
