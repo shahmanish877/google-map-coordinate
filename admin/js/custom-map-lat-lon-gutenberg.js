@@ -6,7 +6,7 @@
 
 	registerBlockType('custom-map/custom-map-lat-lon', {
 		title: __('Custom Map Coordinates', 'custom-map-lat-lon'),
-		description: __("A custom block to display google map with latitude & longitude", "custom-map-lat-lon"),
+		description: __("A custom block to display google map with latitude & longitude (leave blank for default values)", "custom-map-lat-lon"),
 		icon: 'location',
 		category: 'common',
 		attributes: {

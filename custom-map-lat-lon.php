@@ -7,8 +7,8 @@
  * @wordpress-plugin
  * Plugin Name:       Custom Map Coordinates
  * Plugin URI:        https://#
- * Description:       This plugin adds the shortcode ([map-coordinate lat="xx" lon="xx"]) and also a Gutenberg block to display Google Maps with Latitude & Longitude. There is also an admin menu to add Latitude & Longitude globally for all Gutenberg blocks and shortcodes.
- * Version:           1.0.0
+ * Description:       This plugin adds the shortcode ([map-coordinate lat="xx" lon="xx"]) and also a Gutenberg block, elementor widget to display Google Maps with Latitude & Longitude. There is also an admin menu to add Latitude & Longitude globally for all Gutenberg blocks, elementor widgets and shortcodes.
+ * Version:           1.0.1
  * Author:            Manish Shah
  * Author URI:        https://www.manishshah.info.np
  * License:           GPL-2.0+
@@ -65,4 +65,19 @@ function run_custom_map_lat_lon() {
 	$plugin->run();
 
 }
+
+
+/**
+ * Registers elementor widget
+ *
+ * @since    1.0.1
+ */
+function register_list_widget( $widgets_manager ) {
+
+    require_once plugin_dir_path( __FILE__ ) . 'admin/elementor-addon/widgets/map-coord-widget.php';
+    $widgets_manager->register( new \Map_Coord_Widget() );
+}
+add_action( 'elementor/widgets/register', 'register_list_widget' );
+
 run_custom_map_lat_lon();
+
