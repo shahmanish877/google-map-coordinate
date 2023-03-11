@@ -1,6 +1,6 @@
 === Custom Map Coordinates ===
 Contributors: shahmanish877
-Tags: google map, google map coordinates, google map latitude longitude
+Tags: google map, maps, coordinates, latitude longitude, google maps, google map coordinates, google map latitude longitude
 Requires at least: 5.6 or higher
 Tested up to: 6.1.1
 Stable tag: 1.1
